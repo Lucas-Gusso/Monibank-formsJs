@@ -61,32 +61,32 @@
             <form class="principal__formulario" data-formulario>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" class="campo__escrita" />
+                    <input type="text" name="nome" id="nome" class="campo__escrita" required minlength="3" />
                     <span class="mensagem-erro"></span>
                 </fieldset>
 
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="email">E-mail</label>
-                    <input type="email"name="email" id="email" class="campo__escrita" />
+                    <input type="email"name="email" id="email" class="campo__escrita" required minlength="5" />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="rg">RG</label>
-                    <input type="text" name="rg" id="rg" class="campo__escrita campo__escrita--menor" />
+                    <input type="text" name="rg" id="rg" class="campo__escrita campo__escrita--menor" required />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
-                    <input type="text" name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required type="text" />
+                    <input type="text" name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required type="text" minlength="11" maxlength="14" />
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__campo">
                     <label class="campo__etiqueta" for="aniversario">Data de nascimento</label>
-                    <input type="date" type="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" />
+                    <input type="date" type="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" required/>
                     <span class="mensagem-erro"></span>
                 </fieldset>
                 <fieldset class="formulario__termos">
-                    <input name="termos" class="termos__input" type="checkbox">
+                    <input name="termos" class="termos__input" type="checkbox" required>
                     <p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
                         descrito na Política
                         de
