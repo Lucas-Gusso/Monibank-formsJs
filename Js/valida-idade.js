@@ -1,6 +1,5 @@
 export default function ehMaiorDeIdade(campo) {
     const dataNascimento = new Date(campo.value);
-    
     validaIdade(dataNascimento);
 
     console.log(validaIdade(dataNascimento));
