@@ -66,6 +66,7 @@ const mensagens = {
 
 function verificaCampo(campo) {
     let mensagem = "";
+    campo.style.border = "2px solid var(--azul-claro)";
     campo.setCustomValidity('');
 
     if (campo.name == "cpf" && campo.value.length >= 11) {
@@ -77,6 +78,7 @@ function verificaCampo(campo) {
     tiposDeErro.forEach(erro => {
         if(campo.validity[erro]) {
             mensagem = mensagens[campo.name][erro];
+            campo.style.border = "2px solid red";
         }
     })
     const mensagemErro = campo.parentNode.querySelector('.mensagem-erro');
